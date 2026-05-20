@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LSV STORE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+    
+      <div class="brand">
+        <span class="brand-icon">◆</span>
+        <span class="brand-name">LSV<span class="brand-accent">STORE</span></span>
+      </div>
+
+    
+      <nav class="nav-links">
+        <a href="#" class="nav-item active">Trang Chủ</a>
+        <a href="#" class="nav-item">Sản Phẩm</a>
+        <a href="#" class="nav-item">Về Chúng Tôi</a>
+        <a href="#" class="nav-item">Liên Hệ</a>
+      </nav>
+
+     
+      <div class="filter-controls">
+      
+        <div class="select-wrapper">
+          <label class="select-label">MỤC LỤC</label>
+          <select class="custom-select" id="categorySelect">
+            <option value="">Tất cả danh mục</option>
+            <option value="dien-tu">Điện Tử</option>
+            <option value="thoi-trang">Thời Trang</option>
+            <option value="noi-that">Nội Thất</option>
+            <option value="my-pham">Mỹ Phẩm</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+
+      
+        <div class="select-wrapper">
+          <label class="select-label">XẾP HẠNG</label>
+          <select class="custom-select" id="rankSelect">
+            <option value="">Tất cả</option>
+            <option value="5">★★★★★ 5 sao</option>
+            <option value="4">★★★★☆ 4 sao+</option>
+            <option value="3">★★★☆☆ 3 sao+</option>
+            <option value="ban-chay">Bán Chạy</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+
+      
+        <div class="select-wrapper">
+          <label class="select-label">LOẠI</label>
+          <select class="custom-select" id="typeSelect">
+            <option value="">Tất cả loại</option>
+            <option value="moi">Hàng Mới</option>
+            <option value="sale">Đang Giảm Giá</option>
+            <option value="limited">Phiên Bản Giới Hạn</option>
+            <option value="cao-cap">Cao Cấp</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+ 
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Trang Chủ</a>
+      <a href="#">Sản Phẩm</a>
+      <a href="#">Về Chúng Tôi</a>
+      <a href="#">Liên Hệ</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-sub">BỘ SƯU TẬP MỚI 2026</p>
+      <h1 class="hero-title">Tinh Tế<br /><span class="hero-accent">Đẳng Cấp</span></h1>
+      <p class="hero-desc">Khám phá những sản phẩm được tuyển chọn kỹ lưỡng, mang đến trải nghiệm mua sắm cao cấp nhất.</p>
+      <button class="hero-btn">Khám Phá Ngay</button>
+    </div>
+    <div class="hero-deco">◆</div>
+  </section>
+
+  <main class="main-content">
+    <div class="section-header">
+      <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card" id="card1">
+        <div class="card-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop"
+            alt="Đồng hồ cao cấp"
+            class="card-img"
+          />
+          <div class="card-badge">MỚI</div>
+          <div class="card-overlay">
+            <button class="overlay-btn">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-category">Phụ Kiện</span>
+          <h3 class="card-title">Đồng Hồ Premium Series</h3>
+          <div class="card-stars">★★★★★</div>
+          <div class="card-footer">
+            <span class="card-price">4.500.000 ₫</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card featured" id="card2">
+        <div class="card-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&auto=format&fit=crop"
+            alt="Nước hoa cao cấp"
+            class="card-img"
+          />
+          <div class="card-badge sale">SALE</div>
+          <div class="card-overlay">
+            <button class="overlay-btn">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-category">Mỹ Phẩm</span>
+          <h3 class="card-title">Nước Hoa Luxury Edition</h3>
+          <div class="card-stars">★★★★★</div>
+          <div class="card-footer">
+            <span class="card-price">2.800.000 ₫</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" id="card3">
+        <div class="card-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&auto=format&fit=crop"
+            alt="Giày sneaker"
+            class="card-img"
+          />
+          <div class="card-badge limited">LIMITED</div>
+          <div class="card-overlay">
+            <button class="overlay-btn">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-category">Thời Trang</span>
+          <h3 class="card-title">Sneaker Black Edition</h3>
+          <div class="card-stars">★★★★☆</div>
+          <div class="card-footer">
+            <span class="card-price">3.200.000 ₫</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">LSV</div>
+      <p class="footer-credit">Lê Sỹ Vượng &nbsp;|&nbsp; MSSV: 24103107</p>
+      <p class="footer-copy">CNTTK24</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
